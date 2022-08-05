@@ -31,49 +31,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 300px;
-  padding: 12px;
-  border: 1px solid rgb(6, 6, 6);
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #ff0101;
-  color: rgb(15, 13, 13);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #ff0505;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #636363;
-  padding: 20px;
-}
-p {color: white;}
-
-form{margin-left: 170%; width: 60%;}
-body{background-color: #fafafa;}
-</style>
 </head>
+
 <body>
     <!-- Loader Start -->
     <div class="css-loader">
@@ -81,13 +40,13 @@ body{background-color: #fafafa;}
     </div>
     <!-- Loader End -->
     <!-- Header Start -->
-    <header class="position-absolute w-100" style="background-color:red;">
+    <header class="position-absolute w-100">
         <div class="container">
             <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
                 <div class="contact">
                     <a href="tel:+1234567890" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+351 9123456789</a>
-                    <a href="mailto:logisticainovativa@gmail.com"><i class="fa fa-envelope"
-                            aria-hidden="true"></i>logisticainovativa@gmail.com</a>
+                    <a href="mailto:info@upskill.pt"><i class="fa fa-envelope"
+                            aria-hidden="true"></i>info@upskill.pt</a>
                 </div>
                 <nav class="d-flex aic">
                     <a href="#" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
@@ -114,6 +73,7 @@ body{background-color: #fafafa;}
                         <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem Somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tracking.html">Tracking</a></li>
                     </ul> 
                     <form class="bg-white search-form" method="get" id="searchform">
                         <div class="input-group">
@@ -128,72 +88,91 @@ body{background-color: #fafafa;}
             </nav>
         </div>
     </header>
+    
+     <!-- Trust Start -->
+  
+    <!-- Trust End -->
     <section class="featured">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-                    <div class="title">
-                        <h1 class="title-blue" style="color:darkgray">.</h1> 
-                        <h1 class="title-blue" style="color:darkgray">.</h1> 
-                        <h3 class="title-primary"></h3>
-                        <h3 class="title-white" style="color:white;">Quer implementar RFID na sua empresa?</h3>
-                    </div>
-                    <p>Temos a solução ideal para si. Preencha o nosso formulário e iremos entrar em contacto consigo</p>
+                <div class="">
+                    <div class="title">                        
+                        <h1 class="title-blue" style="color:whitesmoke">.</h1>                    
+                        <h1 class="title-blue" style="color:whitesmoke">.</h1>                      
+                        <h4 class="title-primary">Quer implementar RFID na sua empresa?</h4>
+                        <h2 class="title-blue">Preencha o nosso formulário e iremos entrar em contacto consigo?</h2>
+                    
+                    <div class="featured" style="display:inline-block ;">
+                        <form action="/action_page.php">
+                          <label for="name">O seu nome</label><br>
+                          <input type="text" id="name" name="firstname" placeholder="Introduza o seu nome">
+                      
+                          <br><label for="email">O seu email</label><br>
+                          <input type="text" id="email" name="email" placeholder="Introduza o seu email">
+                      
                 
+                            <br><label for="distrito">Distrito</label><br>
+                             <select id="distrito" name="distrito">
+                            <option value="selecione">Selecione</option>
+                            <option value="aveiro">Aveiro</option>
+                            <option value="beja">Beja</option>
+                            <option value="braga">Braga</option>
+                            <option value="bragança">Bragança</option>
+                            <option value="castelobranco">Castelo Branco</option>
+                            <option value="coimbra">Coimbra</option>
+                            <option value="evora">Évora</option>
+                            <option value="faro">Faro</option>
+                            <option value="guarda">Guarda</option>
+                            <option value="leiria">Leiria</option>
+                            <option value="lisboa">Lisboa</option>
+                            <option value="portalegre">Portalegre</option>      
+                            <option value="porto">Porto</option>
+                            <option value="santarem">Santarém</option>
+                            <option value="setubal">Setúbal</option>
+                            <option value="vianadocastelo">Viana do Castelo</option>
+                            <option value="vilareal">Vila Real</option>
+                            <option value="viseu">Viseu</option>
+                          </select>
+                
+                         <br><label for="empresa">A sua empresa</label><br>
+                          <input type="text" id="empresa" name="empresa" placeholder="Introduza o nome da sua empresa">
+                          
+                          <br><label for="telefone">O seu contacto</label><br>
+                          <input type="text" id="telefone" name="telefone" placeholder="Introduza o seu número de contacto">
+                          
+                          <br><label for="observacoes">Observações que ache relevantes</label><br>
+                          <input type="text" id="observacoes" name="observacoes" placeholder="Introduza as suas observações">
+                          
+                          <br><input type="submit" value="Enviar">
+                        </form>
+                      </div>
+                    </div>
+                         <h6 class="title-primary">Na Innovative Logistics nada se cria, nada se perde, tudo se rastreia!</h6>
+                    
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <h1 class="title-blue" style="color:whitesmoke">.</h1>
+                    <h1 class="title-blue" style="color:whitesmoke">.</h1>
+                    <h1 class="title-blue" style="color:whitesmoke">.</h1>
+                    
                 </div>
             </div>
         </div>
     </section>
     <!-- Call To Action 2 End -->
-
-    <div class="featured" style="display:inline-block ;">
-        <form action="/action_page.php">
-          <label for="name">O seu nome</label><br>
-          <input type="text" id="name" name="firstname" placeholder="Introduza o seu nome">
-      
-          <br><label for="email">O seu email</label><br>
-          <input type="text" id="email" name="email" placeholder="Introduza o seu email">
-      
-
-   <br><label for="distrito">Distrito</label><br>
-          <select id="distrito" name="distrito">
-            <option value="selecione">Selecione</option>
-            <option value="aveiro">Aveiro</option>
-            <option value="beja">Beja</option>
-            <option value="braga">Braga</option>
-            <option value="bragança">Bragança</option>
-            <option value="castelobranco">Castelo Branco</option>
-            <option value="coimbra">Coimbra</option>
-            <option value="evora">Évora</option>
-            <option value="faro">Faro</option>
-            <option value="guarda">Guarda</option>
-            <option value="leiria">Leiria</option>
-            <option value="lisboa">Lisboa</option>
-            <option value="portalegre">Portalegre</option>      
-            <option value="porto">Porto</option>
-            <option value="santarem">Santarém</option>
-            <option value="setubal">Setúbal</option>
-            <option value="vianadocastelo">Viana do Castelo</option>
-            <option value="vilareal">Vila Real</option>
-            <option value="viseu">Viseu</option>
-          </select>
-
-     <br><label for="empresa">A sua empresa</label><br>
-          <input type="text" id="empresa" name="empresa" placeholder="Introduza o nome da sua empresa">
-          
-          <br><label for="telefone">O seu contacto</label><br>
-          <input type="text" id="telefone" name="telefone" placeholder="Introduza o seu número de contacto">
-          
-          <br><label for="observacoes">Observações que ache relevantes</label><br>
-          <input type="text" id="observacoes" name="observacoes" placeholder="Introduza as suas observações">
-          
-          <br><input type="submit" value="Enviar";
-        </form>
-      </div>
-      
-    
+<section>
+    <div id="map">
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrOmFhIfYlHXusz1cVaMLdLDdi2i23V5w&callback=initMap&v=weekly"
+      defer
+    ></script>
+    </div>
+</section>
     <!-- Footer Start -->
     <footer>
+        <!-- Widgets Start -->
+
+        <!-- Widgets End -->
         <!-- Foot Note Start -->
         <div class="foot-note">
             <div class="container">
