@@ -17,7 +17,7 @@
           request.tag=document.button[0].tag.value;
           alert(JSON.stringify(request));
           
-          axios.get('https://reqres.in/api/users?page=2',request).then((response)=>{
+          axios.get('',request).then((response)=>{
             alert(JSON.stringify(response));
   
           });
@@ -116,7 +116,7 @@
                         <h2 class="title-blue">INNOVATIVE LOGISTICS</h2>
                     </div>
                     <br><label for="observacoes">Coloque a referência que procura:</label><br>
-                    <input type="text" id="observacoes" name="observacoes" placeholder="Número da TAG">
+                    <input type="text" id="observacoes" name="tag" placeholder="Número da TAG">
                     
                     <button type="button" onclick="tracking()">
                         Procurar
