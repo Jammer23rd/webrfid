@@ -11,6 +11,18 @@
     /   Facebook: https://facebook.com/fh5co
     /   Twitter: https://twitter.com/fh5co
     -->
+    <script>
+        function senddata(){
+          var request={};
+          request.tag=document.button[0].tag.value;
+          alert(JSON.stringify(request));
+          
+          axios.get('https://reqres.in/api/users?page=2',request).then((response)=>{
+            alert(JSON.stringify(response));
+  
+          });
+        }
+      </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
